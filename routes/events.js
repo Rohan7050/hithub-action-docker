@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
   const eventData = req.body;
   res.status(201).json({
     message: 'Event created.',
-    event: { ...eventData},
+    event: { ...eventData, id: 1},
   });
 });
 
